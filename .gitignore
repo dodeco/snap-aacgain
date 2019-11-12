@@ -1,0 +1,5 @@
+__pycache__
+parts/
+prime/
+*.snap
+*.tar.bz2

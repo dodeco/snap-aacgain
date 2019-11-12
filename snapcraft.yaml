@@ -1,0 +1,26 @@
+name: aacgain
+version: "1.9"
+summary: MP3Gain analyzes and adjusts mp3 files so that they have the same volume
+description: AACGain normalizes the volume of digital music files using the Replay Gain algorithm. It works by modifying the global_gain fields in the aac samples. Free-form metadata tags are added to the file to save undo information, making the normalization process reversable.
+
+  It supports AAC(mp4/m4a/QuickTime) audio files in addition to mp3 files.
+
+  BACK UP YOUR MUSIC FILES BEFORE USING AACGAIN! UNLIKE MP3GAIN, AACGAIN IS NOT COMPLETELY REVERSABLE. THE UNDO OPTION IS INTENDED TO RESTORE A MUSIC FILE TO BE FUNCTIONALLY EQUIVALENT TO ITS ORIGINAL STATE, BUT IT WILL NOT BE BIT-FOR-BIT IDENTICAL TO THE ORIGINAL FILE. IT IS POSSIBLE FOR APPLE TO CHANGE THE ITUNES MUSIC FILE FORMAT IN WAYS THAT ARE INCOMPATIBLE WITH AACGAIN, RESULTING TO CORRUPTED MUSIC FILES THAT CANNOT BE RESTORED TO THEIR ORIGINAL STATE. I AM NOT RESPONSIBLE FOR DAMAGED FILES.
+
+confinement: strict
+
+apps:
+  aacgain:
+    command: aacgain
+    plugs:
+      - home
+
+parts:
+  aacgain:
+    plugin: aacgain
+    build-packages:
+      - autoconf
+      - g++
+      - gcc
+      - libtool
+      - make
