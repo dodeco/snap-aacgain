@@ -1,6 +1,6 @@
 name: aacgain
 version: "1.9"
-summary: MP3Gain analyzes and adjusts mp3 files so that they have the same volume
+summary: AACGain normalizes the volume of digital music files using the Replay Gain algorithm
 description: AACGain normalizes the volume of digital music files using the Replay Gain algorithm. It works by modifying the global_gain fields in the aac samples. Free-form metadata tags are added to the file to save undo information, making the normalization process reversable.
 
   It supports AAC(mp4/m4a/QuickTime) audio files in addition to mp3 files.
