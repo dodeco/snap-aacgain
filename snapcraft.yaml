@@ -20,6 +20,7 @@ parts:
     plugin: aacgain
     build-packages:
       - autoconf
+      - automake
       - g++
       - gcc
       - libtool
