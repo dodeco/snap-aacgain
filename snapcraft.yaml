@@ -15,13 +15,13 @@ apps:
     plugs:
       - home
 
+base: core18
+
 parts:
   aacgain:
     plugin: aacgain
     build-packages:
       - autoconf
       - automake
-      - g++
-      - gcc
+      - git
       - libtool
-      - make
